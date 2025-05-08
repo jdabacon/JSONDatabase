@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Storage UI</title>
+</head>
+<body>
+  <h1>Create a Box</h1>
+  <form id="boxForm">
+    <input name="id" placeholder="Box ID" required><br>
+    <input name="label" placeholder="Label"><br>
+    <input name="description" placeholder="Description"><br>
+    <input name="location_id" placeholder="Location ID"><br>
+    <input name="shelf_id" placeholder="Shelf ID"><br>
+    <input name="qr_code" placeholder="QR Code"><br>
+    <button type="submit">Create Box</button>
+  </form>
+
+  <script>
+    document.getElementById('boxForm').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const data = Object.fromEntries(new FormData(e.target));
+      data.image_base64 = ""; // optionally add an image
+      const res = await fetch('/api/boxes', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data)
+      });
+      const result = await res.json();
+      alert(result.message || result.error);
+    });
+  </script>
+</body>
+</html>
