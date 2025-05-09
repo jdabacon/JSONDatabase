@@ -1,0 +1,16 @@
+{
+  "locations": {
+    "loc3": "locations/location_loc3.json",
+    "loc4": "locations/location_loc4.json",
+    "loc5": "locations/location_loc5.json"
+  },
+  "shelves": {
+    "shelf3": "shelves/shelf_shelf3.json"
+  },
+  "boxes": {
+    "50": "boxes/box_50.json",
+    "a": "boxes/box_a.json",
+    "aA": "boxes/box_aA.json",
+    "abcd": "boxes/box_abcd.json"
+  }
+}
