@@ -1,0 +1,7 @@
+{
+  "id": "shelf3",
+  "name": "Heavy Items Shelf",
+  "description": "Supports heavy mechanical parts",
+  "location_id": "loc2",
+  "boxes": []
+}

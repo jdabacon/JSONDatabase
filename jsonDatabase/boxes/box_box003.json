@@ -1,0 +1,9 @@
+{
+  "id": "box003",
+  "label": "Label Printer",
+  "description": "Thermal label printer and spare rolls.",
+  "location_id": "loc1",
+  "shelf_id": "shelfB",
+  "image_base64": "",
+  "qr_code": "BOX-003-QR"
+}

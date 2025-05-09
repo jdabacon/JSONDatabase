@@ -1,0 +1,9 @@
+{
+  "id": "50",
+  "label": "my new box test",
+  "description": "this is a test of creating a new box",
+  "location_id": "",
+  "shelf_id": "",
+  "qr_code": "",
+  "image_base64": ""
+}
